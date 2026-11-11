@@ -1,0 +1,20 @@
+# Ambiente local de desenvolvimento acadêmico. NÃO destinado à produção.
+services:
+  airflow:
+    image: apache/airflow:3.4.0
+    container_name: quem-faz-airflow
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW_HOME: /opt/airflow/projectdata
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+      PYTHONPATH: /opt/airflow/src
+      QF_BASE_DIR: /opt/airflow
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./chegada:/opt/airflow/chegada
+      - ./airflow-data:/opt/airflow/projectdata

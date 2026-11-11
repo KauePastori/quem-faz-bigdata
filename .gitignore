@@ -1,0 +1,53 @@
+
+# ============================================
+# QUEM FAZ - BIG DATA
+# Arquivos que nao devem ir para o GitHub
+# ============================================
+
+# Airflow - dados e credenciais locais
+airflow-data/
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+*simple_auth_manager_passwords.json*
+standalone_admin_password.txt
+
+# Dados gerados durante a execucao
+chegada/
+
+# Evidencias e capturas de tela
+# Revisar e anonimizar antes de publicar
+docs/evidencias/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Credenciais e configuracoes sensiveis
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs e bancos locais
+*.log
+*.sqlite
+*.sqlite3
+
+# Arquivos temporarios
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,7 @@
+categoria,total_pedidos,pedidos_com_proposta,pedidos_contratados,servicos_concluidos,taxa_conclusao_percentual,origem_dados
+Hidráulica,43,30,19,11,25.58,DADOS SIMULADOS
+Montagem de móveis,33,27,24,11,33.33,DADOS SIMULADOS
+Limpeza,32,21,11,6,18.75,DADOS SIMULADOS
+Manutenção,31,22,13,8,25.81,DADOS SIMULADOS
+Elétrica,31,20,14,8,25.81,DADOS SIMULADOS
+Pintura,30,21,14,7,23.33,DADOS SIMULADOS

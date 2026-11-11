@@ -1,0 +1,3 @@
+Os registros sintéticos de exemplo ficam em pedidos_exemplo.jsonl.
+A fonte pública oficial deve ser coletada ao executar: py executar_local.py ibge
+Não inserir arquivos falsos sob o nome de base real do IBGE.
